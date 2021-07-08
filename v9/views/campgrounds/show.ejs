@@ -13,7 +13,7 @@
             <div class="thumbnail">
                 <img  class="img-responsive" src="<%=campground.image%>">   
                 <div class="post"  class="caption-full">
-                    <h5 style="margin-left:20px; margin-bottom:5px; margin-top:5px" class="pull-right ">RS.500/night</h5>
+                    <h5 style="margin-left:20px; margin-bottom:5px; margin-top:5px" class="pull-right "><%= campground.price %>/night</h5>
                     <h5 style="margin-left:20px; margin-bottom:5px"> <%=campground.name%> </h5>
                     <p style="margin-left:20px; margin-bottom:5px"><%=campground.description%></p>
                     <% if(currentUser && currentUser._id.equals(campground.author.id) ){%>
